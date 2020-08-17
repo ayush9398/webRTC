@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
-const server = require('http').Server(app);
+const options = {
+    key: fs.readFileSync('key.pem'),
+    cert: fs.readFileSync('cert.pem')
+};
+const server = require('https').createServer(options, app);
 const io = require('socket.io')(server)
 const { v4: uuidV4 } = require('uuid')
 
@@ -23,4 +27,4 @@ io.on('connection', socket => {
 
 })
 
-server.listen(3000)
+server.listen(443)
