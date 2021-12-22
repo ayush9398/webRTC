@@ -22,5 +22,3 @@ Remember to share the whole url with the other participants for them to join sam
 - If you want to use it without ssl on chrome, every participant must enable `Insecure origins treated as secure` with the server IP along with port in textarea.
 
 If you like it, then star it! 
-
-May find it working at: [`ayush9398.tk`](https://ayush9398.tk).
